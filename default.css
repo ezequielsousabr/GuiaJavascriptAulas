@@ -1,0 +1,68 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0; padding: 0;
+}
+
+body{
+    background-color: greenyellow;
+    color: black;
+    max-width: 50%;
+    margin: auto auto;
+}
+
+input{
+    border: 1px solid #0001;
+    outline: none;
+    padding: 8px 20px;
+    width: 20%;
+}
+
+button{
+    padding: 8px 20px;
+}
+
+label{
+    font-family: serif;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-right: 2px;
+}
+
+h1,span{
+    font-size: xx-large;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1%;
+    color: black;
+}
+
+span{
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.733);
+    background-color: yellow;
+    border-radius: 4px;
+    line-height: 60px;
+}
+
+p{
+    margin: 10px auto;
+    padding: 10px 5px;
+}
+
+.botaoReiniciar{
+    border: 1px solid black;
+    background-color: chartreuse;
+    padding: 5px 10px;
+    border-radius: 4px;
+    color: black;
+    box-shadow: 2px 1px 2px #0001;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.botaoReiniciar:active{
+    transform: scale(1.1);
+    background-color: #2bff00;
+    transition: ease .1s;
+}

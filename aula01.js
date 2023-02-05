@@ -11,10 +11,7 @@ function conferirPalpites(){
 
   var palpiteUsuario = Number(campoPalpite.value);
 
-  if(contagemPalpites === 1){
-    palpites.textContent = "Palpites anteriores...";
-  }
-  else{
+  if(contagemPalpites == 1){
     palpites.textContent += palpiteUsuario + ' ';
   }
 
@@ -43,7 +40,7 @@ function conferirPalpites(){
   }
 
   palpiteUsuario++;
-  campoPalpite.value = " ";
+  campoPalpite.value = "";
   campoPalpite.focus();
 
 }
@@ -55,6 +52,10 @@ function configFimDeJogo(){
   envioPalpite.disabled = true;
   botaoReinicio = document.createElement('button');
   document.body.appendChild(botaoReinicio);
+  botaoReinicio.textContent = "Reiniciar Jogo!";
+
+  botaoReinicio.setAttribute('class', 'botaoReiniciar');
+  
   botaoReinicio.addEventListener('click', reniciarJogo);
 }
 
