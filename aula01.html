@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Criando jogo de advinhar numero aleatório" />
+    <title>Advinhar Numeros Aleatorios</title>
+
+    <style>
+
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0; padding: 20px;
+        }
+
+        body{
+            background-color: greenyellow;
+            color: black;
+        }
+
+        input{
+            border: 1px solid #0001;
+            outline: none;
+            padding: 8px 20px;
+            width: 20%;
+        }
+
+        button{
+            padding: 8px 20px;
+        }
+
+        label{
+            font-size: 16px;
+            font-weight: 600;
+            text-transform: uppercase;
+            padding-right: 2px;
+        }
+
+        h1,span{
+            font-size: xx-large;
+            text-align: center;
+            text-transform: uppercase;
+            padding: 1%;
+            color: black;
+        }
+
+        span{
+            font-weight: 600;
+            color: rgba(0, 0, 0, 0.733);
+            background-color: yellow;
+            border-radius: 4px;
+            line-height: 60px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <section>
+        <h1>Escolha um numero entre <span>1</span> a <span>100</span></h1>
+        <p class="palpites"></p>
+        <p class="ultimoResultado"></p>
+        <p class="baixoOuAlto"></p>
+        
+        <label for="campoPalpite">Digite seu palpite: </label><input type="text" id="campoPalpite" class="campoPalpite">
+        <input type="submit" value="Enviar palpite" class="envioPalpite">
+    </section>
+    <script src="aula01.js"></script>
+</body>
+</html>
